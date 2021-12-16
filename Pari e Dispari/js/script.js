@@ -5,7 +5,14 @@ function numeroRandom(numMin, numMax){
     return risultato;
 }
 
-
+//funzione che verifica se il num è pari o dispari
+//ritorna true se pari altrimenti dispari
+function pariDispari(numComputer, numPlayer){
+    if((numComputer+numPlayer)%2 === 0){
+        return true;
+    }  
+    return false;
+}
 
 
 
