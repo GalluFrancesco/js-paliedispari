@@ -22,7 +22,7 @@ const MIN=1;
 const MAX=5
 
 pariButton.addEventListener('click', function () {
-    const numPlayer=prompt("Scegli un numero fra 1 e 5");
+    const numPlayer=parseInt(prompt("Scegli un numero fra 1 e 5"));
 
     //il pc genera random un numero conpreso fra 1 e 5
     const numPc=numeroRandom(MIN, MAX)
@@ -40,7 +40,7 @@ pariButton.addEventListener('click', function () {
 })
 
 dispariButton.addEventListener('click', function () {
-    const numPlayer=prompt("Scegli un numero fra 0 e 5");
+    const numPlayer=parseInt(prompt("Scegli un numero fra 1 e 5"));
 
     //il pc genera random un numero conpreso fra 1 e 5
     const numPc=numeroRandom(MIN, MAX)
