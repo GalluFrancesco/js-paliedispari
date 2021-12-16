@@ -17,6 +17,18 @@ function palindroma(inputWord){
 
     return false;
 }
+//chiedo all'utente la parola da verificare
+let inputWord = prompt("inserisci una parola");
+let stamp=document.querySelector(".stamp");
+
+//se la funzione restituisce true stampo "è palindroma"
+//altrimenti stampo "non è palindroma"
+if(palindroma(inputWord)){
+    stamp.innerHTML=`La parola ${inputWord} è palindroma`
+}else{
+    stamp.innerHTML=`La parola ${inputWord} non è palindroma`
+}
+
 
 
 
