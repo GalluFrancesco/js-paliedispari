@@ -14,6 +14,21 @@ function pariDispari(numComputer, numPlayer){
     return false;
 }
 
+const pariButton=document.querySelector(".pari");
+const dispariButton=document.querySelector(".dispari");
+
+
+pariButton.addEventListener('click', function () {
+    const numPlayer=prompt("Scegli un numero fra 0 e 5");
+
+})
+
+dispariButton.addEventListener('click', function () {
+    const numPlayer=prompt("Scegli un numero fra 0 e 5");
+
+})
+
+
 
 
 
