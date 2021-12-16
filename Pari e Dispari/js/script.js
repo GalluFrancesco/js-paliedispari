@@ -35,8 +35,6 @@ pariButton.addEventListener('click', function () {
         stamp.innerHTML=`HAI PERSO. Il computer ha scelto il numero ${numPc} il giocatore
                          ha scelto il numero ${numPlayer} il risultato è dispari.`;
     }
-
-    console.log(pariDispari(numPlayer, numPc))
 })
 
 dispariButton.addEventListener('click', function () {
@@ -54,7 +52,6 @@ dispariButton.addEventListener('click', function () {
         stamp.innerHTML=`HAI VINTO. Il computer ha scelto il numero ${numPc} il giocatore
                          ha scelto il numero ${numPlayer} il risultato è dispari.`;
     }
-    console.log(pariDispari(numPlayer, numPc))
 })
 
 
