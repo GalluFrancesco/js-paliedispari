@@ -7,12 +7,8 @@ function numeroRandom(numMin, numMax){
 
 //funzione che verifica se il num è pari o dispari
 //ritorna true se pari altrimenti dispari
-function pariDispari(num1, num2){
-    const tot=num1+num2;
-    if(tot%2 === 0){
-        return true;
-    }  
-    return false;
+function pariDispari(num1, num2){ 
+    return (num1+num2)%2===0;
 }
 
 const pariButton=document.querySelector(".pari");
@@ -21,11 +17,17 @@ const stamp=document.querySelector(".stamp")
 const MIN=1;
 const MAX=5
 
+pariButton.style.borderColor="grey";
+dispariButton.style.borderColor="grey";
+
 pariButton.addEventListener('click', function () {
     const numPlayer=parseInt(prompt("Scegli un numero fra 1 e 5"));
 
     //il pc genera random un numero conpreso fra 1 e 5
     const numPc=numeroRandom(MIN, MAX)
+
+    dispariButton.style.borderColor="grey";
+    pariButton.style.borderColor="red";
 
     //verifico che sia pari o dispari
     if(pariDispari(numPlayer, numPc)){
@@ -39,7 +41,9 @@ pariButton.addEventListener('click', function () {
 
 dispariButton.addEventListener('click', function () {
     const numPlayer=parseInt(prompt("Scegli un numero fra 1 e 5"));
-
+    
+    pariButton.style.borderColor="grey";
+    dispariButton.style.borderColor="red";
     //il pc genera random un numero conpreso fra 1 e 5
     const numPc=numeroRandom(MIN, MAX)
 
